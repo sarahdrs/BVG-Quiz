@@ -4,37 +4,40 @@
 <link rel="stylesheet" href="BVG.css">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 <head>
-<title>Are you a real BERLINER?</title>
+  <title>Are you a real BERLINER?</title>
 </head>
 <body>
-<header>
+  <header id=header>
 
-<h1>Are you a real BERLINER?</h1>
-<p>Find out if you can call yourself a true BERLINER <br> who will never get lost in the underground.</p>
-<a href="#instruction"><button id=DoIt type="submit">Let's do it!</button></a>
-</header>
+    <h1>Are you a real BERLINER?</h1>
+    <p>Find out if you can call yourself a true BERLINER <br> who will never get lost in the underground.</p>
+    <a href="#instruction"><button id=DoIt type="submit" onclick="headerDisplay()">Let's do it!</button></a>
+  </header>
 
-<section id=questionsection>
-<div id= "instruction" class=instruction>
-  <p>For each station click on the right metro line</p>
-</div>
-<div>
-  <h2 id="question" class="question"></h2>
+  <section id=questionsection>
 
-  <button class="answer answer-2" ></button>
+    <div id= "instruction" class=instruction>
+      <p>For each station click on the right metro line</p>
+    </div>
+    <div>
+      <h2 id="question" class="question"></h2>
 
-  <button class="answer"></button>
+      <button class="answer answer-2" ></button>
 
-  <button class="answer"></button>
-</div>
+      <button class="answer"></button>
 
-<div class=clearfix></div>
-<div id="result-score"></div>
-<p class=scoreCount><strong>Score</strong>: <span class="score"></span> / 10 </p>
-</section>
-<span id=madeby>Made by Sarah</span>
+      <button class="answer"></button>
+    </div>
 
-<script src="bvg.js"></script>
+    <div class=clearfix></div>
+    <div id="result-score"></div>
+    <input id="try-again" type="button" value="Try Again" onClick="location.reload()">
+    <p class=scoreCount><b>Score</b>: <span class="score"></span> / 10 </p>
+    <span id=madeby>Made by Sarah</span>
+  </section>
+
+
+  <script src="bvg.js"></script>
 
 
 </body>
